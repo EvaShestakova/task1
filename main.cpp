@@ -8,7 +8,13 @@
 
 int main() {
     try {
-        AutoTest();
+        CVectorHori a;
+        CVectorVert c,b;
+        a[1] = 3;
+        b[1] = 2;
+        c = a + b;
+        c.print();
+       AutoTest();
         ifstream fin("data.txt");
         if (!fin.is_open()) {
             cout << "Error! Cannot open\n";

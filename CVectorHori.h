@@ -9,8 +9,8 @@ public:
 	~CVectorHori() {}
 	CVectorHori(const CVector& b) : CVector(b) {}
 	CVectorHori(const double* b, int n) :CVector(b, n) {}
-	CVectorHori operator+(const CVectorHori& b);
-	CVectorHori operator-(const CVectorHori& b);
+	friend CVectorHori operator+(const CVector& a, const CVector& b);
+	friend CVectorHori operator-(const CVector& a, const CVector& b);
 	int output(const string FileName) override;
 };
 

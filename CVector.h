@@ -5,6 +5,7 @@
 using namespace std;
 class Temp;
 void AutoTest();
+class CVectorHori;
 
 class CVector {
 protected:
@@ -33,6 +34,7 @@ public:
 	double& operator[](int i) const;
 	double operator*(const CVector& b);
 	Temp operator[](int i);
-
 	friend class Temp;
+	friend CVectorHori operator+(const CVector& a, const CVector& b);
+	friend CVectorHori operator-(const CVector& a, const CVector& b);
 };

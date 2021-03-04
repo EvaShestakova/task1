@@ -9,8 +9,6 @@ public:
 	~CVectorVert() {}
 	CVectorVert(const CVector& b) : CVector(b) {}
 	CVectorVert(const double* b, int n) :CVector(b, n) {}
-	CVectorVert operator+(const CVectorVert& b);
-	CVectorVert operator-(const CVectorVert& b);
 	int output(const string FileName) override;
 };
 
